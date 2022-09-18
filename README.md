@@ -20,5 +20,7 @@ Para rodar:
 Baixar Telegram e procurar pelo username do bot: @Tage22Bot
 
 Para verificar os arquivos e seu funcionamento é necessário credenciais do Watson: Checar PDF com credenciais
+
 Instalar node-red: https://nodered.org/docs/getting-started/local (node-red no terminal)
+
 Instalar as extensões do node-red: node-red-contrib-telegrambot, node-red-node-watson, node-red-contrib-play-audio
