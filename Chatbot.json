@@ -1,0 +1,1097 @@
+{
+  "intents": [
+    {
+      "intent": "Desempenho",
+      "examples": [
+        {
+          "text": "Como anda o aprendizado dos alunos?"
+        },
+        {
+          "text": "Como estão as médias?"
+        },
+        {
+          "text": "Me ajude a tirar dúvidas em relação ao desempenho dos alunos."
+        },
+        {
+          "text": "Me fale sobre o desempenho dos alunos."
+        },
+        {
+          "text": "Quero saber sobre as notas dos alunos."
+        }
+      ],
+      "description": "Intent criada com o objetivo de capturar perguntas sobre o desempenho dos alunos."
+    },
+    {
+      "intent": "Desempenho_Matérias",
+      "examples": [
+        {
+          "text": "Biologia"
+        },
+        {
+          "text": "Como os alunos estão em Português?"
+        },
+        {
+          "text": "Filosofia"
+        },
+        {
+          "text": "Física"
+        },
+        {
+          "text": "Geografia"
+        },
+        {
+          "text": "Literatura"
+        },
+        {
+          "text": "Matemática"
+        },
+        {
+          "text": "Me fale sobre o desempenho dos alunos em História."
+        },
+        {
+          "text": "Os alunos estão indo bem matemática?"
+        },
+        {
+          "text": "Quero saber sobre matématica."
+        },
+        {
+          "text": "Química"
+        }
+      ],
+      "description": "Intent criada com o objetivo de responder perguntas sobre o desempenho dos alunos em determinada matéria."
+    },
+    {
+      "intent": "Dica_Reforço",
+      "examples": [
+        {
+          "text": "Como posso melhor em fisica?"
+        },
+        {
+          "text": "No que devo focar em filosofia?"
+        },
+        {
+          "text": "No que posso melhorar a notas dos alunos em geografia?"
+        },
+        {
+          "text": "Onde devo focar em matemática?"
+        },
+        {
+          "text": "O que devo passar em literatura?"
+        },
+        {
+          "text": "O que devo reforçar em história?"
+        },
+        {
+          "text": "O que devo revisar em Química?"
+        },
+        {
+          "text": "O que que passar para melhorar a nota dos meus alunos em Português?"
+        },
+        {
+          "text": "O que revisar em Biologia"
+        },
+        {
+          "text": "Proponha conteúdos para eu passar em matemática."
+        }
+      ],
+      "description": "Intent criada com o objetivo de fornecer dicas e reforços de cada matéria."
+    },
+    {
+      "intent": "Erros_matérias",
+      "examples": [
+        {
+          "text": "Em História, quais foram os assuntos com mais erros?"
+        },
+        {
+          "text": "Onde está a dificuldades em português?"
+        },
+        {
+          "text": "Quais os maiores erros em português?"
+        },
+        {
+          "text": "Quais são os erros dos alunos em geografia?"
+        },
+        {
+          "text": "Qual a maior dificuldade dos alunos em história?"
+        },
+        {
+          "text": "Quero saber sobre a principal dificuldade dos alunos em matemática."
+        }
+      ],
+      "description": "Intent criada com o objetivo de capturar perguntas sobre os principais erros dos alunos em determinada disciplina."
+    },
+    {
+      "intent": "Salas",
+      "examples": [
+        {
+          "text": "1° ano"
+        },
+        {
+          "text": "2° ano"
+        },
+        {
+          "text": "3° ano"
+        },
+        {
+          "text": "Me fale sobre o segundo ano"
+        },
+        {
+          "text": "Qual o desempenho dos alunos do primeiro ano?"
+        },
+        {
+          "text": "Quero saber sobre o terceiro ano"
+        }
+      ],
+      "description": "Intent criada para capturar perguntas sobre as salas."
+    },
+    {
+      "intent": "Saudacoes",
+      "examples": [
+        {
+          "text": "Boa noite"
+        },
+        {
+          "text": "Boa tarde"
+        },
+        {
+          "text": "Bom dia"
+        },
+        {
+          "text": "Eai"
+        },
+        {
+          "text": "Fala aí"
+        },
+        {
+          "text": "oi"
+        },
+        {
+          "text": "Olá"
+        }
+      ],
+      "description": "Intent criada para receber saudações"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "Matérias",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Biologia",
+          "synonyms": [
+            "bio",
+            "Ciências"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Filosofia",
+          "synonyms": [
+            "filo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Física",
+          "synonyms": [
+            "fisica"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Geografia",
+          "synonyms": [
+            "geo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "História",
+          "synonyms": [
+            "Hist",
+            "historia"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Literatura",
+          "synonyms": [
+            "lit"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Matemática",
+          "synonyms": [
+            "Mat",
+            "matematica"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Português",
+          "synonyms": [
+            "Língua portuguesa",
+            "port",
+            "portugues",
+            "PT"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Química",
+          "synonyms": [
+            "Qui"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "salas",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "1° Ano",
+          "synonyms": [
+            "1",
+            "1°",
+            "primeiro",
+            "primeiro ano"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "2° Ano",
+          "synonyms": [
+            "2",
+            "2°",
+            "segundo",
+            "segundo ano"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "3° Ano",
+          "synonyms": [
+            "3",
+            "3°",
+            "terceiro",
+            "terceiro ano"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "saudacao",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Bom dia",
+          "synonyms": [
+            "Boa noite",
+            "Boa tarde"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "oba",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "oi",
+          "synonyms": [
+            "eae",
+            "eai",
+            "e aí",
+            "ola",
+            "Olá",
+            "opa"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá, professor. Como posso te ajudar hoje?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_8_1663442796423",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1662244249327",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1662244249338",
+      "previous_sibling": "handler_3_1662244249338"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_8_1662244249327",
+      "event_name": "input",
+      "dialog_node": "handler_3_1662244249338"
+    },
+    {
+      "type": "standard",
+      "title": "Reforço_Matéria",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Dica_Reforço",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_10_1662244134481",
+      "previous_sibling": "node_1_1653081772335"
+    },
+    {
+      "type": "standard",
+      "title": "Desempenho_Matéria",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Desempenho_Matérias",
+      "dialog_node": "node_1_1653081772335",
+      "previous_sibling": "node_6_1653144479761"
+    },
+    {
+      "type": "standard",
+      "title": "Desempenho",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "É muito bom ver a sua preocupação com os alunos, professor(a). Qual sala deseja saber sobre?\n-1°\n-2°\n-3°"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Desempenho",
+      "dialog_node": "node_3_1653051695065",
+      "previous_sibling": "node_5_1653084805328"
+    },
+    {
+      "type": "standard",
+      "title": "Dificuldades_Matérias",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Erros_matérias",
+      "dialog_node": "node_5_1653084805328",
+      "previous_sibling": "node_10_1662244134481"
+    },
+    {
+      "type": "standard",
+      "title": "Saudação",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Saudacoes",
+      "dialog_node": "node_6_1653144479761",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Salas",
+      "dialog_node": "node_8_1663442796423",
+      "previous_sibling": "node_3_1653051695065"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Em matemática os alunos estão com o desempenho abaixo da média, com as notas variando de 3,5 as 5. Essas notas são consideradas baixas, sugiro muito estudo e revisão."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1653081772335",
+      "conditions": "@Matérias:Matemática",
+      "dialog_node": "response_10_1653082229058",
+      "previous_sibling": "response_9_1653082228203"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Na disciplina de matemática, os alunos estão enfrentando dificuldades quando se fala de logaritmos e vetores. O ideal seria um plantão de dúvidas. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1653084805328",
+      "conditions": "@Matérias:Matemática",
+      "dialog_node": "response_10_1653084878981",
+      "previous_sibling": "response_4_1653084878168"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Em Geografia é preciso revisar:\n-Rochas\n-Planalto\n-Planíce"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1662244134481",
+      "conditions": "@Matérias:Geografia",
+      "dialog_node": "response_10_1663339241157",
+      "previous_sibling": "response_6_1663338698362"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Em biologia os alunos estão enfrentando algumas dificuldades. As principais matérias são: Citologia e Plantas."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1653084805328",
+      "conditions": "@Matérias:Biologia",
+      "dialog_node": "response_10_1663456191863",
+      "previous_sibling": "response_3_1653084879878"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Em história os alunos estão indo muito bem, pode ser considerado o melhor desempenho de todos. A média das salas estão entre 8,5 e 9,0."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1653081772335",
+      "conditions": "@Matérias:História",
+      "dialog_node": "response_1_1653082230286",
+      "previous_sibling": "response_10_1653082229058"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Não há preocupações."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1662244134481",
+      "conditions": "@Matérias:Filosofia",
+      "dialog_node": "response_1_1663456973831",
+      "previous_sibling": "response_3_1663339299507"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Física apresenta algumas dificuldades em relação a média dos alunos pois está variando de 6,5 a 7,0."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1653081772335",
+      "conditions": "@Matérias:Física",
+      "dialog_node": "response_2_1663447496194",
+      "previous_sibling": "response_5_1663447494897"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Já em história, a dificuldade não é tanta. Os alunos estão indo muito bem porém, seria interessante uma revisão em história do Brasil."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1653084805328",
+      "conditions": "@Matérias:História",
+      "dialog_node": "response_3_1653084879878",
+      "previous_sibling": "response_10_1653084878981"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Em História não há tanta preocupação os principais assuntos a serem revisados são:\n-Colonização\n-Ditadura Militar"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1662244134481",
+      "conditions": "@Matérias:História",
+      "dialog_node": "response_3_1663339299507",
+      "previous_sibling": "response_10_1663339241157"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "É muito bom ver a sua preocupação com os alunos do 2°. Você quer saber o desempenho dos alunos em qual matéria?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1663442796423",
+      "conditions": "@salas:(2° Ano)",
+      "dialog_node": "response_3_1663443516133",
+      "previous_sibling": "response_4_1663442823603"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Revisar:\nBarroco\nPeríodo Renascentista\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1662244134481",
+      "conditions": "@Matérias:Literatura",
+      "dialog_node": "response_3_1663456984538",
+      "previous_sibling": "response_7_1663456982409"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Em geografia, pude perceber que os alunos estão com muita dificuldade no conceito de globalização."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1653084805328",
+      "conditions": "@Matérias:Geografia",
+      "dialog_node": "response_4_1653084878168",
+      "previous_sibling": "response_7_1653084872435"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$saudacao_usuario, como posso te ajudar hoje?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1653144479761",
+      "context": {
+        "saudacao_usuario": "@saudacao.literal"
+      },
+      "conditions": "@saudacao",
+      "dialog_node": "response_4_1653144508339"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "É muito bom ver a sua preocupação com os alunos do 1°. Você quer saber o desempenho dos alunos em qual matéria?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1663442796423",
+      "conditions": "@salas:(1° Ano)",
+      "dialog_node": "response_4_1663442823603"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Os alunos estão indo muito bem em Português. As notas estão variando entre 7,0 e 8,5."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1653081772335",
+      "conditions": "@Matérias:Português",
+      "dialog_node": "response_5_1653081924408"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Em Biologia os alunos estão indo muito bem, não apresentando nenhuma dificuldade. A média das salas estão entre 8,0 e 9,5."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1653081772335",
+      "conditions": "@Matérias:Biologia",
+      "dialog_node": "response_5_1663447493439",
+      "previous_sibling": "response_1_1653082230286"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A média dos alunos está muito baixa em Química, variando de 5,5 a 6,0."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1653081772335",
+      "conditions": "@Matérias:Química",
+      "dialog_node": "response_5_1663447494897",
+      "previous_sibling": "response_5_1663447493439"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Já em Filosofia os alunos estão melhorando cade vez mais, apresentando média de até 8,0."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1653081772335",
+      "conditions": "@Matérias:Filosofia",
+      "dialog_node": "response_5_1663447497620",
+      "previous_sibling": "response_2_1663447496194"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Já em Química, os alunos não apresentam muitas dificuldades, sugiro uma revisão de conteúdo em Carbonos."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1653084805328",
+      "conditions": "@Matérias:Química",
+      "dialog_node": "response_5_1663456193614",
+      "previous_sibling": "response_10_1663456191863"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Em filosofia não há preocupações e dificuldades"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1653084805328",
+      "conditions": "@Matérias:Filosofia",
+      "dialog_node": "response_5_1663456198289",
+      "previous_sibling": "response_9_1663456196400"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Na disciplina de matemática há algumas preocupações em relação ao conteúdo, que são:\n-Equação de Segundo Grau\n-Vetores\n-Logarítmos"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1662244134481",
+      "conditions": "@Matérias:Matemática",
+      "dialog_node": "response_6_1663338698362",
+      "previous_sibling": "response_8_1662244263004"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Em literatura, a nota dos alunos varia de 8,5 a 9,0. Eles estão indo muito bem."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1653081772335",
+      "conditions": "@Matérias:Literatura",
+      "dialog_node": "response_6_1663456698369",
+      "previous_sibling": "response_5_1663447497620"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Revisar:\n-Vetores\n-Som\n-Leis de Newton"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1662244134481",
+      "conditions": "@Matérias:Física",
+      "dialog_node": "response_6_1663456976283",
+      "previous_sibling": "response_1_1663456973831"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A principal dificuldade dos alunos em português está relacionada ao conteúdo de Orações Subordinadas. O ideal seria realizar um plantão de dúvidas. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1653084805328",
+      "conditions": "@Matérias:Português",
+      "dialog_node": "response_7_1653084872435"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Em literatura, pude notar a dificuldade dos alunos em período Barroco"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1653084805328",
+      "conditions": "@Matérias:Literatura",
+      "dialog_node": "response_7_1663456345538",
+      "previous_sibling": "response_5_1663456198289"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Revisar:\n-Citologia\n-Plantas\n-Corpo Humano"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1662244134481",
+      "conditions": "@Matérias:Biologia",
+      "dialog_node": "response_7_1663456982409",
+      "previous_sibling": "response_6_1663456976283"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Em português e aconselho uma revisão nas seguintes matérias: \n-Oração Subordinada\n-Sintaxe\n-Semântica"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_10_1662244134481",
+      "conditions": "@Matérias:Português",
+      "dialog_node": "response_8_1662244263004"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "É muito bom ver a sua preocupação com os alunos do 3°. Você quer saber o desempenho dos alunos em qual matéria?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1663442796423",
+      "conditions": "@salas:(3° Ano)",
+      "dialog_node": "response_8_1663443562374",
+      "previous_sibling": "response_3_1663443516133"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Infelizmente, os alunos não estão com um desempenho muito bom na disciplina de Geografia. As notas estão decaindo bastante, com uma média de 5,5."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1653081772335",
+      "conditions": "@Matérias:Geografia",
+      "dialog_node": "response_9_1653082228203",
+      "previous_sibling": "response_5_1653081924408"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Física, os alunos apresentam muita dificuldade com se trata de vetores e Som."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1653084805328",
+      "conditions": "@Matérias:Física",
+      "dialog_node": "response_9_1663456196400",
+      "previous_sibling": "response_5_1663456193614"
+    },
+    {
+      "type": "slot",
+      "parent": "node_10_1662244134481",
+      "dialog_node": "slot_8_1662244249327",
+      "previous_sibling": "response_3_1663456984538"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "Ajuda",
+  "language": "pt-br",
+  "description": "Essa skill ajuda o cliente a encontrar o melhor produto para ele, e tira eventuais dúvidas sobre o ecommerce."
+}
