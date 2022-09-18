@@ -14,7 +14,7 @@ Turma: 2TDSG
 Ano: 2022
 
 # VÍDEO
-LINK PARA O VÍDEO:
+LINK PARA O VÍDEO: https://www.youtube.com/watch?v=T434jYSrpQQ
 
 Para rodar:
 Baixar Telegram e procurar pelo username do bot: @Tage22Bot
